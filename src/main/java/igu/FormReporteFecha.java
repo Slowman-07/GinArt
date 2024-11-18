@@ -48,6 +48,11 @@ public class FormReporteFecha extends javax.swing.JInternalFrame {
         jLabel1.setText("Desde:");
 
         btnbuscar.setText("Buscar");
+        btnbuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbuscarActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Hasta:");
 
@@ -153,6 +158,11 @@ public class FormReporteFecha extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
+        Crud.ClabReportes objetoReportes = new Crud.ClabReportes();
+        objetoReportes.mostrarTotalVentaPorFecha(txtdesde, txthasta, tbtotal, lbltotal);
+    }//GEN-LAST:event_btnbuscarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

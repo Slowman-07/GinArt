@@ -1,24 +1,15 @@
 package Tablas;
 
-
-
 /**
  *
  * @author Gonzalo
  */
 public class TablaProductos {
      
-        private int idProducto;
-        private String nombre;
-        private double precio;
-        private int stock;
-
-    public TablaProductos(int idProducto, String nombre, double precio, int stock) {
-        this.idProducto = idProducto;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-    }
+        int idProducto;
+        String nombreProducto;
+        Double precioProducto;
+        int stockProducto;
 
     public int getIdProducto() {
         return idProducto;
@@ -28,29 +19,30 @@ public class TablaProductos {
         this.idProducto = idProducto;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreProducto() {
+        return nombreProducto;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
-    public double getPrecio() {
-        return precio;
+    public Double getPrecioProducto() {
+        return precioProducto;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrecioProducto(Double precioProducto) {
+        this.precioProducto = precioProducto;
     }
 
-    public int getStock() {
-        return stock;
+    public int getStockProducto() {
+        return stockProducto;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void setStockProducto(int stockProducto) {
+        this.stockProducto = stockProducto;
     }
+
     
-  }      
+}  
        

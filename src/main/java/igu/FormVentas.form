@@ -40,22 +40,25 @@
                   <Component id="jPanel7" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btncobrar" alignment="1" max="32767" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txttotalventa" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <Component id="btncobrar" min="-2" pref="78" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lbltotal" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lbliva" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtivaventa" min="-2" pref="78" max="-2" attributes="0"/>
+                              <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -75,17 +78,17 @@
               <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbliva" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtivaventa" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txttotalventa" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbltotal" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="btncobrar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -134,6 +137,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JTextField" name="txtbuscarcliente">
+          <Events>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtbuscarclienteKeyReleased"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
@@ -154,6 +160,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tbclientesMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -211,6 +220,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtbuscarproductos">
+          <Events>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtbuscarproductosKeyReleased"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
           <AuxValues>
@@ -231,6 +243,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tbproductosMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -261,7 +276,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel5" pref="0" max="32767" attributes="0"/>
+              <Component id="jPanel5" pref="127" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jPanel4" min="-2" pref="107" max="-2" attributes="0"/>
@@ -472,9 +487,9 @@
                                   <Component id="txtcantidadventa" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnhabilitar" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnaplicar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btndeshabilitar" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnnoaplicar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -486,8 +501,8 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel11" alignment="3" max="32767" attributes="0"/>
                           <Component id="txtprecioventa" alignment="3" max="32767" attributes="0"/>
-                          <Component id="btnhabilitar" alignment="3" max="32767" attributes="0"/>
-                          <Component id="btndeshabilitar" alignment="3" max="32767" attributes="0"/>
+                          <Component id="btnaplicar" alignment="3" max="32767" attributes="0"/>
+                          <Component id="btnnoaplicar" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -509,15 +524,21 @@
             </Component>
             <Component class="javax.swing.JTextField" name="txtprecioventa">
             </Component>
-            <Component class="javax.swing.JButton" name="btnhabilitar">
+            <Component class="javax.swing.JButton" name="btnaplicar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Aplicar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnaplicarActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btndeshabilitar">
+            <Component class="javax.swing.JButton" name="btnnoaplicar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="No Aplicar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnnoaplicarActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
@@ -530,6 +551,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agregar Producto"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnagregarproductoActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -554,9 +578,9 @@
                       <Group type="102" attributes="0">
                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtultimafactura" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblultimafactura" min="-2" pref="55" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="btneliminar" min="-2" max="-2" attributes="0"/>
+                          <Component id="btneliminarventa" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -568,8 +592,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtultimafactura" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btneliminar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btneliminarventa" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblultimafactura" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane3" min="-2" pref="109" max="-2" attributes="0"/>
@@ -584,18 +608,13 @@
             <Property name="text" type="java.lang.String" value="Ultima Factura Emitida:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtultimafactura">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="----"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="btneliminar">
+        <Component class="javax.swing.JButton" name="btneliminarventa">
           <Properties>
             <Property name="text" type="java.lang.String" value="Eliminar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btneliminarventaActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane3">
           <AuxValues>
@@ -607,7 +626,7 @@
             <Component class="javax.swing.JTable" name="tbresumenventa">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="5" rowCount="4">
+                  <Table columnCount="5" rowCount="0">
                     <Column editable="true" title="idProducto" type="java.lang.Object"/>
                     <Column editable="true" title="N.Producto" type="java.lang.Object"/>
                     <Column editable="true" title="Precio Producto" type="java.lang.Object"/>
@@ -651,6 +670,11 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JLabel" name="lblultimafactura">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel14">
@@ -658,18 +682,27 @@
         <Property name="text" type="java.lang.String" value="IVA (21):"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtivaventa">
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
       <Properties>
         <Property name="text" type="java.lang.String" value="TOTAL:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txttotalventa">
-    </Component>
     <Component class="javax.swing.JButton" name="btncobrar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cobrar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncobrarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbliva">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="----"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbltotal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="----"/>
       </Properties>
     </Component>
   </SubComponents>
